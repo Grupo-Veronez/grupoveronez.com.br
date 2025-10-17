@@ -47,7 +47,7 @@ function Home() {
         }}
       />
 
-      {/* Main Content Card - CENTRALIZADO */}
+      {/* Main Content Card */}
       <div
         style={{
           backgroundColor: "rgba(15, 23, 42, 0.8)",
@@ -130,7 +130,7 @@ function Home() {
           Novidades incríveis estão a caminho!
         </p>
 
-        {/* Enhanced Progress Bar */}
+        {/* Progress Bar */}
         <div
           style={{
             width: "100%",
@@ -140,17 +140,20 @@ function Home() {
             overflow: "hidden",
             marginBottom: "30px",
             boxShadow: "inset 0 2px 4px rgba(0, 0, 0, 0.2)",
+            position: "relative",
           }}
         >
           <div
             style={{
-              height: "6px",
-              width: "65%",
+              height: "100%",
+              width: "100%",
               background: "linear-gradient(90deg, #3b82f6, #06b6d4, #8b5cf6)",
               borderRadius: "8px",
-              animation:
-                "progress 2s infinite ease-in-out, shimmer 3s infinite",
+              animation: "smoothProgress 3s infinite ease-in-out",
               boxShadow: "0 0 20px rgba(59, 130, 246, 0.4)",
+              position: "absolute",
+              left: "0",
+              top: "0",
             }}
           />
         </div>
@@ -271,10 +274,19 @@ function Home() {
 
       <style>
         {`
-          @keyframes progress {
-            0% { transform: translateX(-100%); }
-            50% { transform: translateX(0%); }
-            100% { transform: translateX(100%); }
+          @keyframes smoothProgress {
+            0% {
+              transform: translateX(-100%);
+              opacity: 0.7;
+            }
+            50% {
+              transform: translateX(0%);
+              opacity: 1;
+            }
+            100% {
+              transform: translateX(100%);
+              opacity: 0.7;
+            }
           }
           
           @keyframes bounce {
@@ -285,11 +297,6 @@ function Home() {
           @keyframes float {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-15px) rotate(180deg); }
-          }
-          
-          @keyframes shimmer {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
           }
           
           * {
