@@ -4,16 +4,25 @@
   "description": "Site principal do Grupo Veronez",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && npm run migration:up && next dev ",
     "lint:prettier:check": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "test": "jest --runInBand --verbose",
-    "test:watch": "jest --watchAll --runInBand"
+    "test:watch": "jest --watchAll --runInBand",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
+    "migration:create": "node-pg-migrate -m infra/migrations create",
+    "migration:up": "node-pg-migrate -m infra/migrations --envPath .env.development up"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.4",
+    "dotenv-expand": "^11.0.6",
     "next": "^13.1.6",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
