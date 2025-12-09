@@ -1,0 +1,216 @@
+.root {
+  --color-primary: #007bff;
+  --color-secondary: #ff4081;
+  --color-background: #f8f9fa;
+  --color-text: #343a40;
+  --color-text-light: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --font-heading: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-body: "Roboto", Arial, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.heroTitle:hover .highlight:nth-child(1) {
+  color: var(--color-secondary);
+}
+
+.heroTitle:hover .highlight:nth-child(2) {
+  color: var(--color-primary);
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+  color: #6c757d;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+  border: none;
+}
+
+.ctaButton:hover {
+  background-color: #e03873;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 64, 129, 0.6);
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.sectionTitle {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-primary);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.serviceCard {
+  background-color: var(--color-text-light);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px var(--color-shadow);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  max-width: 350px;
+  text-align: center;
+  border-top: 5px solid var(--color-primary);
+}
+
+.serviceCard:nth-child(3) {
+  border-top-color: var(--color-secondary);
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.serviceIcon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.serviceTitle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.serviceDescription {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.socials {
+  margin-bottom: 15px;
+}
+
+.socialLink {
+  color: var(--color-text);
+  margin: 0 15px;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  display: inline-block;
+}
+
+.socialLink:hover {
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.socialLink:nth-child(2):hover {
+  color: var(--color-secondary);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceCard {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .ctaButton {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
