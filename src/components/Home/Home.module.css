@@ -60,20 +60,21 @@
 .ctaButton {
   display: inline-block;
   padding: 15px 30px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   color: var(--color-text-light);
   text-decoration: none;
   font-weight: 600;
   border-radius: 50px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+  box-shadow: 0 4px 15px rgba(64, 64, 255, 0.6);
   border: none;
 }
 
 .ctaButton:hover {
-  background-color: #e03873;
+  background-color: #3b38e0;
+  color: white;
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(255, 64, 129, 0.6);
+  box-shadow: 0 6px 20px rgba(64, 64, 255, 0.6);
 }
 
 .services {
