@@ -7,21 +7,21 @@
 </h1>
 
 <p align="center">
-  <strong>Official website of the Grupo Veronez</strong><br>
-  <em>We transform ideas into digital reality. The Grupo Veronez is your strategic partner for online success!</em>
+  <strong>Site oficial do Grupo Veronez</strong><br>
+  <em>Transformamos ideias em realidade digital. O Grupo Veronez é o seu parceiro estratégico para o sucesso online!</em>
 </p>
 
 <p align="center">
-  <a href="/README-PT.md" target="_blank">🇧🇷 Português</a>
+  <a href="/README.md" target="_blank">🇺🇸 English</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/Grupo-Veronez/grupoveronez.com.br/issues" target="_blank">🐛 Report Bug</a>
+  <a href="https://github.com/Grupo-Veronez/grupoveronez.com.br/issues" target="_blank">🐛 Reportar Bug</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/Grupo-Veronez" target="_blank">🏢 GitHub Enterprise</a>
+  <a href="https://github.com/Grupo-Veronez" target="_blank">🏢 GitHub Empresa</a>
 </p>
 
-**grupoveronez.com.br** is the ideal platform for those seeking to boost their business through the convergence of high-level programming and strategic marketing. We combine technology and communication to transform ideas into scalable results and a solid digital presence.
+**grupoveronez.com.br** é a plataforma ideal para quem busca impulsionar seus negócios por meio da convergência de programação de alto nível e marketing estratégico. Combinamos tecnologia e comunicação para transformar ideias em resultados escaláveis ​​e uma sólida presença digital.
 
-## 🛠️ Technologies Used
+## 🛠️ Tecnologias Utilizadas
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -32,5 +32,5 @@
 ---
 
 <p align="center">
-  Made by <a href="https://github.com/Grupo-Veronez" target="_blank">Grupo Veronez</a>
+  Feito por <a href="https://github.com/Grupo-Veronez" target="_blank">Grupo Veronez</a>
 </p>
