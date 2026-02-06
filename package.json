@@ -28,8 +28,8 @@
     "next": "16.1.5",
     "node-pg-migrate": "8.0.4",
     "pg": "8.17.2",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@commitlint/cli": "20.4.1",
