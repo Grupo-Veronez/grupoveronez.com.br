@@ -17,7 +17,8 @@
     "migrations:create": "node-pg-migrate -m infra/migrations create",
     "migrations:up": "node-pg-migrate -m infra/migrations --envPath .env.development up",
     "prepare": "husky",
-    "commit": "cz"
+    "commit": "cz",
+    "clean": "rm -rf .next"
   },
   "author": "",
   "license": "MIT",
