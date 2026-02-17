@@ -17,8 +17,14 @@ async function status(request, response) {
     text: "SELECT COUNT(*)::int FROM pg_stat_activity WHERE datname = $1;",
     values: [databaseName],
   });
-  const databaseOpenedConnectionsValue =
-    databaseOpenedConnectionsResult.rows[0].count;
+  const databaseOpenedConnectionsValue = parseInt(
+    databaseOpenedConnectionsResult.rows[0].count,
+    10,
+  );
+
+  if (!process.env.POSTGRES_DB) {
+    return response.status(500).json({ error: "POSTGRES_DB is not set" });
+  }
 
   response.status(200).json({
     updated_at: updatedAt,
