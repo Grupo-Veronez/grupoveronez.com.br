@@ -24,6 +24,7 @@ async function query(queryObject) {
     const result = await pool.query(queryObject);
     return result;
   } catch (error) {
+    console.log("\n Error dentro do catch do database.js:");
     console.error(error);
     throw error;
   }
@@ -52,7 +53,7 @@ const database = {
 if (typeof process !== "undefined" && process && process.on) {
   const shutdown = async () => {
     try {
-      await pool.end();
+      await pool?.end();
     } catch (_) {}
   };
 
