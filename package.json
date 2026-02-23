@@ -18,7 +18,9 @@
     "migrations:up": "node-pg-migrate -m infra/migrations --envPath .env.development up",
     "prepare": "husky",
     "commit": "cz",
-    "clean": "rm -rf .next"
+    "clean": "rm -rf .next",
+    "update-dependencies": "npx npm-check-updates -i",
+    "install-dependencies": "rm -rf node_modules package-lock.json && npm i"
   },
   "author": "",
   "license": "MIT",
