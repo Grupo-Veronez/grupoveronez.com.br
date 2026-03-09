@@ -146,6 +146,42 @@
   color: #6c757d;
 }
 
+.ctaSection {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.appointmentButton {
+  display: inline-block;
+  background-color: #0070f3;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.appointmentButton:hover {
+  background-color: #005bc1;
+  transform: translateY(-2px);
+}
+
 .footer {
   width: 100%;
   max-width: 1200px;

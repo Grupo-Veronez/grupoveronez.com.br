@@ -54,6 +54,31 @@ const Home = () => {
           </div>
         </section>
 
+        <section className={styles.ctaSection}>
+          <h2 className={styles.ctaTitle}>Pronto para escalar seu projeto?</h2>
+          <p className={styles.ctaText}>
+            Agende uma consultoria estratégica gratuita de 1 hora e descubra
+            como podemos ajudar.
+          </p>
+          <a
+            href="https://cal.com/grupoveronez/1h"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.appointmentButton}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="20"
+              height="20"
+              style={{ marginRight: "10px", verticalAlign: "middle" }}
+            >
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z" />
+            </svg>
+            Reservar Horário na Agenda
+          </a>
+        </section>
+
         <footer className={styles.footer}>
           <div className={styles.socials}>
             <a
