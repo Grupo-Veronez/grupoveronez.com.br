@@ -82,7 +82,7 @@ const Home = () => {
         <footer className={styles.footer}>
           <div className={styles.socials}>
             <a
-              href="https://github.com/Grupo-Veronez"
+              href="https://github.com/grupoveronez"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
